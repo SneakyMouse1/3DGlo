@@ -74,11 +74,11 @@ const timer = () => {
       
       let getTime = getTimeRemaining();
   
-      greetings.textContent     =   "${getTime.greetings}! Сегодня ${getTime.dayWeeks}`;
+      greetings.textContent     =   "${getTime.greetings}! Сегодня ${getTime.dayWeeks}.`;
 
       time.textContent          =   ` Текущее время: ${getTime.timeNow} `;
 
-      newYearDay.textContent    =   ` До Нового Года осталось ${getTime.newYear} дней `;
+      newYearDay.textContent    =   ` До Нового Года осталось ${getTime.newYear} дней! `; // Надо бы добавить склонение...можно не надо?
     };
 
     updateClock();
