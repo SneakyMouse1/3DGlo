@@ -1,0 +1,20 @@
+{
+  "name": "3dglo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack ---watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SneakyMouse1/3DGlo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SneakyMouse1/3DGlo/issues"
+  },
+  "homepage": "https://github.com/SneakyMouse1/3DGlo#readme"
+}
