@@ -68,7 +68,7 @@ const timer = () => {
     };
   
 
-    // Display on the page (Use ECSMA
+    // Display on the page
 
     const updateClock = () => {
       
