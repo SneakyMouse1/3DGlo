@@ -62,23 +62,23 @@ const timer = () => {
       };
 
   
-      // Return data obj.
+      // Return all data
 
       return { greetings, dayWeeks, timeNow, newYear };
     };
   
 
-    // Display on the page
+    // Display on the page (Use ECSMA
 
     const updateClock = () => {
       
       let getTime = getTimeRemaining();
   
-      greetings.textContent     =   `${getTime.greetings}! Сегодня ${getTime.dayWeeks}`;
+      greetings.textContent     =   "${getTime.greetings}! Сегодня ${getTime.dayWeeks}`;
 
       time.textContent          =   ` Текущее время: ${getTime.timeNow} `;
 
-      newYearDay.textContent    =   ` До Нового Года осталось ${getTime.newYear} дня `;
+      newYearDay.textContent    =   ` До Нового Года осталось ${getTime.newYear} дней `;
     };
 
     updateClock();
