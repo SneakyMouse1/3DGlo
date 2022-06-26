@@ -1,20 +1,29 @@
 {
   "name": "3dglo",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "watch": "webpack ---watch"
+    "build": "webpack --mode=production",
+    "watch": "webpack --watch --mode=development",
+    "start": "webpack serve --mode=development --open"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.2"
+  },
+  "dependencies": {
+    "jshint": "^2.13.4"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SneakyMouse1/3DGlo.git"
   },
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/SneakyMouse1/3DGlo/issues"
   },
-  "homepage": "https://github.com/SneakyMouse1/3DGlo#readme"
+  "homepage": "https://github.com/SneakyMouse1/3DGlo#readme",
+  "description": ""
 }
