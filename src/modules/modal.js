@@ -1,4 +1,5 @@
 const modal = () => {
+    
     const modal = document.querySelector('.popup');
     const buttons = document.querySelectorAll('.popup-btn');
     const closeBtn = modal.querySelector('.popup-close');
@@ -9,8 +10,9 @@ const modal = () => {
     const modalAnimation = () => {
         count++;
         idInterval = requestAnimationFrame(modalAnimation);
-        if (count < 45) {
+        if (count < 42) {
             modalWindow.style.left = count + '%';
+            modalWindow.style.transform = 'translateY(50%)';
         }
     };
 
