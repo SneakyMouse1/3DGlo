@@ -6,7 +6,7 @@ const modal = () => {
     const modalWindow = modal.querySelector('.popup-content');
     let count = 0;
     let idInterval;
-    let isOpen = false;
+    
 
     const modalAnimation = () => {
         count++;
@@ -35,6 +35,20 @@ const modal = () => {
         modal.style.display = 'none';
     });
     
+    // Закрываем по нажатию вне окна
+    modal.addEventListener('click', e => {
+        let target = e.target;
+
+        if (target.classList.contains('popup-close')) {
+            modal.style.display = 'none';
+        } else {
+            target = target.closest('.popup-content');
+            if (!target) {
+                modal.style.display = 'none';
+            }
+        }
+    });
+
 };
 
 export default modal;
