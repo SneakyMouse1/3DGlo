@@ -1,10 +1,3 @@
-<<<<<<< Updated upstream
-import one from './modules/one';
-import two from './modules/two';
-
-one();
-two();
-=======
 import timer from './modules/timer';
 import menu from './modules/menu';
 import modal from './modules/modal';
@@ -18,4 +11,3 @@ modal();
 smoothscroll();
 validation();
 tabs();
->>>>>>> Stashed changes
