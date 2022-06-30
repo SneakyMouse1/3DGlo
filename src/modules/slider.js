@@ -90,6 +90,8 @@ const slider = () => {
 
 
         if (currentSlide < 0) {
+            
+            
             // Обнуляем слайды
             currentSlide = slide.length - 1; 
         } else if (currentSlide >= slide.length) {
