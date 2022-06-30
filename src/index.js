@@ -5,6 +5,7 @@ import smoothscroll from './modules/smoothscroll';
 import validation from './modules/validation';
 import tabs from './modules/tabs';
 import slider from './modules/slider';
+import calc from './modules/calc';
 
 timer("28 june 2022");
 menu();
@@ -13,3 +14,4 @@ smoothscroll();
 validation();
 tabs();
 slider();
+calc();
