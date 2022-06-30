@@ -64,7 +64,7 @@ const slider = () => {
 
 
     slider.addEventListener('click', e => {
-        e.preventDefault(); // откл ссылки-заглушки по умолчанию
+        e.preventDefault(); // отключение заглушки
         const target = e.target;
 
         // Ограничение клика по не селекторам
