@@ -11,7 +11,7 @@ const slider = () => {
 
     const addDot = () => {
         const newDot = document.createElement('li');
-        newDot.classList.add('dot');
+    
         slide.forEach((item, i) => {
             item[i] = newDot.cloneNode(true);
             dots.append(item[i]);
@@ -23,6 +23,8 @@ const slider = () => {
 
 
 
+    addDot();
+    
     const dot = document.querySelectorAll('.dot');
     let currentSlide = 0,
         interval; // Для стопа
@@ -63,7 +65,7 @@ const slider = () => {
 
 
     slider.addEventListener('click', e => {
-        e.preventDefault(); // отключение заглушки
+        e.preventDefault(); // откл ссылки-заглушки по умолчанию
         const target = e.target;
 
         // Ограничение клика по не селекторам
@@ -89,8 +91,6 @@ const slider = () => {
 
 
         if (currentSlide < 0) {
-            
-            
             // Обнуляем слайды
             currentSlide = slide.length - 1; 
         } else if (currentSlide >= slide.length) {
