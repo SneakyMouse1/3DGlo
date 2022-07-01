@@ -11,7 +11,7 @@ const slider = () => {
 
     const addDot = () => {
         const newDot = document.createElement('li');
-        newDot.classList.add('dot');
+    
         slide.forEach((item, i) => {
             item[i] = newDot.cloneNode(true);
             dots.append(item[i]);
@@ -23,6 +23,8 @@ const slider = () => {
 
 
 
+    addDot();
+    
     const dot = document.querySelectorAll('.dot');
     let currentSlide = 0,
         interval; // Для стопа
