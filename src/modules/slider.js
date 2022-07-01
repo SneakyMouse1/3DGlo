@@ -23,7 +23,6 @@ const slider = () => {
 
 
 
-    addDot();
     const dot = document.querySelectorAll('.dot');
     let currentSlide = 0,
         interval; // Для стопа
