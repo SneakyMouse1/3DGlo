@@ -1,7 +1,7 @@
 export const sendForm = ({ formId, someElem = [] }) => {
 
   const form = document.getElementById((formId));
-  const loaderAnimation = document.createElement('div');
+  const loaderSVG = document.createElement('div');
   const errorText = 'Ошибка...';
   const successText = 'Спасибо! Наш менеджер cкоро с Вами свяжется';
 
@@ -30,18 +30,18 @@ export const sendForm = ({ formId, someElem = [] }) => {
 
 
   const showMsg = (status, msg = '') => {
-      loaderAnimation.classList.remove('loader-circle');
-      loaderAnimation.style.color = '#fff';
-      loaderAnimation.innerHTML = '';
+      loaderSVG.classList.remove('loader-circle');
+      loaderSVG.style.color = '#fff';
+      loaderSVG.innerHTML = '';
 
       if (status === 'error') {
-          loaderAnimation.innerHTML = `<img src="images/icons/error-close-svgrepo-com.svg" width='40px;'/> ${errorText} ${msg}`;
+          loaderSVG.innerHTML = `<img src="images/icons/error-close-svgrepo-com.svg" width='40px;'/> ${errorText} ${msg}`;
       } else if (status === 'success') {
-          loaderAnimation.innerHTML = `<img src="images/icons/success-svgrepo-com.svg" width='40px;'/> ${successText}`;
+          loaderSVG.innerHTML = `<img src="images/icons/success-svgrepo-com.svg" width='40px;'/> ${successText}`;
       }
 
       setTimeout(() => {
-          loaderAnimation.remove();
+          loaderSVG.remove();
       }, 5000);
   };
 
@@ -62,13 +62,13 @@ export const sendForm = ({ formId, someElem = [] }) => {
       const formElements = form.querySelectorAll('input');
       const formData = new FormData(form);
       const formBody = {};
-      loaderAnimation.className = 'loader-circle';
+      loaderSVG.className = 'loader-circle';
       let temp = ''; // Проверить обратные кавычки
       for (let i = 1; i <= 1; i++) {
           temp += `<div class="loader-circle-${i}"><div></div></div>`;
       }
-      loaderAnimation.innerHTML = temp;
-      form.append(loaderAnimation);
+      loaderSVG.innerHTML = temp;
+      form.append(loaderSVG);
       formData.forEach((val, key) => {
           formBody[key] = val;
       });
