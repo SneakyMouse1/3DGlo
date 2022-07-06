@@ -35,9 +35,9 @@ export const sendForm = ({ formId, someElem = [] }) => {
       loaderAnimation.innerHTML = '';
 
       if (status === 'error') {
-          loaderAnimation.innerHTML = `<img src="images/icons/error-close-svgrepo-com.svg" width='45px;'/> ${errorText} ${msg}`;
+          loaderAnimation.innerHTML = `<img src="images/icons/error-close-svgrepo-com.svg" width='40px;'/> ${errorText} ${msg}`;
       } else if (status === 'success') {
-          loaderAnimation.innerHTML = `<img src="images/icons/success-svgrepo-com.svg" width='45px;'/> ${successText}`;
+          loaderAnimation.innerHTML = `<img src="images/icons/success-svgrepo-com.svg" width='40px;'/> ${successText}`;
       }
 
       setTimeout(() => {
