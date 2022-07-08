@@ -17,7 +17,7 @@ export const sendForm = ({ formId, someElem = [] }) => {
             } else if (input.name === 'user_phone') {
                 if (/[^0-9\-\(\)\+]/g.test(input.value)) {
                     success = false;
-                }
+                } 
             } else if (input.name === 'user_message') {
                 if (/[^а-яА-Я-\s0-9\(\)\.\,\:\"\!\?]/g.test(input.value)) {
                     success = false;
